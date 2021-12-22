@@ -24,8 +24,7 @@
     ]
   },
   "include": [
-    "./src/interfaces/*",
-    "./src/abstract_classes/*",
+    "./src/**/*",
   ],
   "exclude": [
     "node_modules",
