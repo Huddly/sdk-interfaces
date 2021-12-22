@@ -1,0 +1,72 @@
+{
+  "name": "@huddly/sdk-interfaces",
+  "version": "0.1.0",
+  "description": "Module for describing the Huddly SDK using interfaces",
+  "scripts": {
+    "clean": "node rmLibDir.js",
+    "build": "npm run build-ts && npm run tslint",
+    "build-ts": "tsc --declaration",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "publish-package": "npm run clean && npm run build && npm publish",
+    "prepare": "npm run build",
+    "preversion": "npm run tslint",
+    "prettier": "prettier  --config ./.prettierrc --write \"src/**/*.ts\"",
+    "prettier-check": "prettier  --config ./.prettierrc --check \"src/**/*.ts\"",
+    "prettify-staged": "pretty-quick --staged --pattern \"src/**/*.ts\" --verbose",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'Updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huddly/sdk-interfaces.git"
+  },
+  "keywords": [
+    "SDK",
+    "Huddly"
+  ],
+  "author": "Huddly AS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Huddly/sdk-interfaces/issues"
+  },
+  "homepage": "https://github.com/Huddly/sdk-interfaces#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "pre-commit": [
+    "prettify-staged",
+    "build"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.20.15",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "pre-commit": "~1.2.2",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.2",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.2",
+    "ts-node": "^8.10.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.9.9"
+  }
+}
