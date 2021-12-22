@@ -1,7 +1,15 @@
 # This workflow will run build the typescript source files, run linter and prettier
 name: CI Check
 
-on: [pull_request]
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
 
 jobs:
   build:
