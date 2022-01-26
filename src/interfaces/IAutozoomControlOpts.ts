@@ -1,3 +1,5 @@
+import AutozoomModes from '../enums/AutozoomModes';
+
 /**
  * Options used for autozoom control class
  *
@@ -15,4 +17,9 @@ export default interface AutozoomControlOpts {
    * @memberof AutozoomControlOpts
    */
   shouldAutoFrame?: boolean;
+
+  /**
+   * The selected mode for autozoom
+   */
+  mode?: AutozoomModes;
 }
