@@ -1,3 +1,13 @@
+#### 0.1.2 (2022-01-26)
+
+##### Documentation Changes
+
+*  Update readme ([f4e7c5d7](https://github.com/Huddly/sdk-interfaces/commit/f4e7c5d70d64229ddf6d035d41750d7ab8cb2119))
+
+##### New Features
+
+*  Support new autozoom mode 'Plaza' (aka 'Gallery View') on IQ ([197cab1f](https://github.com/Huddly/sdk-interfaces/commit/197cab1f258f414055c1b2df904e46cf21826c69))
+
 #### 0.1.1 (2021-12-22)
 
 ##### New Features
