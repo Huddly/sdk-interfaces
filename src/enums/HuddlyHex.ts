@@ -9,8 +9,9 @@ enum HuddlyHex {
   CLOWNFISH_PID = 0x31, // Huddly IQ (without mic and cnn feature)
   DWARFFISH_PID = 0x51, // Huddly ONE
   DARTFISH_PID = 0x41, // Huddly Canvas
-  L1_PID = 0x3e9, // Huddly L1/ACE
   BASE_PID = 0xba5e, // Huddly BASE
+  L1_PID = 0x4d3f64b, // Huddly L1/ACE => From onvif wsdd discovery response (decimal val: 81000011)
+  S1_PID = 0x4d3f64e, // Huddly S1/SEE => From onvif wsdd discovery response (decimal val: 81000014)
 }
 
 export default HuddlyHex;
