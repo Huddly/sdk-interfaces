@@ -40,7 +40,7 @@ export default class Logger {
   static warn(message: string, component: string = 'Generic Component'): void {
     if (['DEBUG'].indexOf(process.env.HUDDLY_LOG_LEVEL) > -1) {
       if (Logger.customLogger) {
-        Logger.customLogger.warn(message);
+        Logger.customLogger.warn(message, component);
         return;
       }
 
@@ -51,7 +51,7 @@ export default class Logger {
   static info(message: string, component: string = 'Generic Component'): void {
     if (['INFO', 'DEBUG'].indexOf(process.env.HUDDLY_LOG_LEVEL) > -1) {
       if (Logger.customLogger) {
-        Logger.customLogger.info(message);
+        Logger.customLogger.info(message, component);
         return;
       }
 
@@ -62,7 +62,7 @@ export default class Logger {
   static debug(message: string, component: string = 'Generic Component'): void {
     if (['DEBUG'].indexOf(process.env.HUDDLY_LOG_LEVEL) > -1) {
       if (Logger.customLogger) {
-        Logger.customLogger.debug(message);
+        Logger.customLogger.debug(message, component);
         return;
       }
 
@@ -73,7 +73,7 @@ export default class Logger {
   static error(message: string, stackTrace: any, component: string = 'Generic Component'): void {
     if (['NONE'].indexOf(process.env.HUDDLY_LOG_LEVEL) == -1) {
       if (Logger.customLogger) {
-        Logger.customLogger.error(message, stackTrace);
+        Logger.customLogger.error(message, stackTrace, component);
         return;
       }
 
