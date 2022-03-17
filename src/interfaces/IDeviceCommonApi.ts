@@ -25,8 +25,6 @@ export default interface IDeviceCommonApi {
     shouldAwaitUnsubscribe?: boolean
   ): Promise<T>;
 
-  asyncFileTransfer(command: any, data: Buffer, timeout?: number): Promise<any>;
-
   getProductInfo(): Promise<any>;
 
   setProductInfo(newProdInfoData: any): Promise<void>;
@@ -34,8 +32,6 @@ export default interface IDeviceCommonApi {
   getUptime(): Promise<any>;
 
   getCameraInfo(): Promise<any>;
-
-  getErrorLogLegacy(timeout: number): Promise<any>;
 
   getErrorLog(timeout: number, retry?: number, allowLegacy?: boolean): Promise<any>;
 
