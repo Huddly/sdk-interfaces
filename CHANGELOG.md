@@ -1,3 +1,18 @@
+### 0.2.0 (2022-03-23)
+
+##### Chores
+
+*  fix audit issues ([51d96e84](https://github.com/Huddly/sdk-interfaces/commit/51d96e84ec57ddac6122510e33eb399ef0066cdd))
+
+##### New Features
+
+*  Updating PID hex value for L1 & S1 ([f5acda75](https://github.com/Huddly/sdk-interfaces/commit/f5acda757847da79aebace18f2c687df1f42209e))
+*  remove the legacy fileTransfer functions ([4dd498b7](https://github.com/Huddly/sdk-interfaces/commit/4dd498b7bb9ddbe976d6e6eb748338201f56000b))
+
+##### Refactors
+
+*  Custom logger could have a component parameter ([9ab882a7](https://github.com/Huddly/sdk-interfaces/commit/9ab882a75764f0b191550a2a03039b9737e159aa))
+
 #### 0.1.2 (2022-01-26)
 
 ##### Documentation Changes
