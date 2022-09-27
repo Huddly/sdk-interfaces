@@ -6,7 +6,6 @@ enum AutozoomModes {
   PLAZA = 'plaza',
   PLAZA_DUPLICATE = 'plaza_duplicate',
   SPEAKER_FRAMING = 'speaker_framing',
-  OFF = 'off',
 }
 
 export default AutozoomModes;
