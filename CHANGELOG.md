@@ -1,3 +1,10 @@
+### 0.2.1 (2022-09-27)
+
+##### New Features
+
+* new interface for autozoom control ([f665e66](https://github.com/Huddly/sdk-interfaces/commit/f665e6606c8881b1e6d8f2ac00d5ceb49fce991a))
+* added speaker_framing enum ([964e2bb](https://github.com/Huddly/sdk-interfaces/commit/964e2bb047df3f43a6b59dcb15102460e8113d0e))
+
 ### 0.2.0 (2022-03-23)
 
 ##### Chores
