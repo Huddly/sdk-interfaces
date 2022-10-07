@@ -11,5 +11,5 @@ export default interface IAutozoomControl extends ICnnControl {
    * succesfully. Reject with an error otherwise.
    * @memberof IAutozoomControl
    */
-  setFraming(framingMode: FramingModes): Promise<void>;
+  setFramingModes(framingMode: FramingModes): Promise<void>;
 }
