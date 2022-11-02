@@ -1,3 +1,14 @@
+#### 0.2.2 (2022-11-02)
+
+##### New Features
+
+*  support focus mode ([fe660545](https://github.com/Huddly/sdk-interfaces/commit/fe66054513d18ff890da8e289f1afdd32e6bec44))
+* **IAutozoomControl:**  added function for getting supported framing modes ([10e25ff4](https://github.com/Huddly/sdk-interfaces/commit/10e25ff412c632309af88e0bdb052dade23b1988))
+
+##### Refactors
+
+* **IAutozoomControl:**  refactor of method to correlate more with the param type setFraming -> setFramingMode ([00535d56](https://github.com/Huddly/sdk-interfaces/commit/00535d56268dbc63b8e48499128d5782de14a28d))
+
 ### 0.2.1 (2022-09-27)
 
 ##### New Features
