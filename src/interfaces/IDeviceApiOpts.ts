@@ -1,3 +1,5 @@
+import HuddlyHex from '../enums/HuddlyHex';
+
 /**
  * Options passed when creating a new instance of
  * `IHuddlyDeviceApi`
@@ -71,4 +73,12 @@ export default interface DeviceApiOpts {
    * @memberof DeviceApiOpts
    */
   targetInterfaceName?: string;
+
+  /**
+   * A list of product ids that should be ignored
+   * when looking for huddly devices.
+   * @type {*}
+   * @memberof DeviceApiOpts
+   */
+  pidsToIgnore?: HuddlyHex[];
 }
