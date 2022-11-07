@@ -1,3 +1,9 @@
+#### 0.2.3 (2022-11-07)
+
+##### New Features
+
+* **IDeviceApiOpts:**  pidsToIgnore option ([d99f296b](https://github.com/Huddly/sdk-interfaces/commit/d99f296b41d7cd4118d45c221bd5e10902e61803))
+
 #### 0.2.2 (2022-11-02)
 
 ##### New Features
