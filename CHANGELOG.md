@@ -1,3 +1,9 @@
+#### 0.2.4 (2022-12-12)
+
+##### New Features
+
+*  added interfaces for dealing with subs ([b4a99b4a](https://github.com/Huddly/sdk-interfaces/commit/b4a99b4aa9b00f95fb82fcf847208043858e5c56))
+
 #### 0.2.3 (2022-11-07)
 
 ##### New Features
