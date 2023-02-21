@@ -18,5 +18,5 @@ export function isOptionCertificate(
 }
 
 export default interface ICaClient {
-  getOptionCertificates(serialNumber: string): OptionCertificatesResult;
+  getOptionCertificates(serialNumber: string): Promise<OptionCertificatesResult>;
 }
