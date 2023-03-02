@@ -2,7 +2,7 @@
  *
  */
 export const Option = {
-  speakerframing: 'speakerframing',
+  speakerFraming: 'speakerframing',
 } as const;
 
 /**
@@ -24,11 +24,6 @@ export interface OptionCertificate {
   data: string;
 }
 
-export interface OptionCertificatesResult {
-  error?: string;
-  optionCertificates?: OptionCertificate[];
-}
-
 export function isOptionCertificate(
   optionCertificate: OptionCertificate
 ): optionCertificate is OptionCertificate {
@@ -44,5 +39,5 @@ export function isOptionCertificate(
  *
  */
 export default interface ICaClient {
-  getOptionCertificates(serialNumber: string): Promise<OptionCertificatesResult>;
+  getOptionCertificates(serialNumber: string): Promise<OptionCertificate[]>;
 }
