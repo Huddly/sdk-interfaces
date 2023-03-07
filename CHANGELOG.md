@@ -1,3 +1,9 @@
+#### 0.2.5 (2023-03-07)
+
+##### New Features
+
+*  added interface for certificate authorithy client ([b4527ac1](https://github.com/Huddly/sdk-interfaces/commit/b4527ac1e67672cd00ebb411094e2e8374b4bd19))
+
 #### 0.2.4 (2022-12-12)
 
 ##### New Features
