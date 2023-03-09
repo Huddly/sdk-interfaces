@@ -12,6 +12,7 @@ enum HuddlyHex {
   BASE_PID = 0xba5e, // Huddly BASE
   L1_PID = 0x4d3f64b, // Huddly L1/ACE => From onvif wsdd discovery response (decimal val: 81000011)
   S1_PID = 0x4d3f64e, // Huddly S1/SEE => From onvif wsdd discovery response (decimal val: 81000014)
+  SMARTBASE_PID = 0xba01, // Huddly Smartbase
 }
 
 export default HuddlyHex;
