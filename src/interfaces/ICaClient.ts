@@ -31,7 +31,7 @@ export function isOptionCertificate(
     'format' in optionCertificate &&
     'option' in optionCertificate &&
     'data' in optionCertificate &&
-    Object.keys(Option).includes(optionCertificate.option)
+    Object.values(Option).includes(optionCertificate.option)
   );
 }
 
