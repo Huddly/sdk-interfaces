@@ -24,7 +24,7 @@ export interface OptionCertificate {
   data: string;
 }
 
-export function isOptionCertificate(
+export function isValidOptionCertificate(
   optionCertificate: OptionCertificate
 ): optionCertificate is OptionCertificate {
   return (
