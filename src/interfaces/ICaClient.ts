@@ -1,11 +1,4 @@
 /**
- *
- */
-export const Option = {
-  speakerFraming: 'speakerframing',
-} as const;
-
-/**
  * Mirrors the expected structure of the server response for each option
  * certificate.
  */
@@ -20,11 +13,11 @@ export interface OptionCertificate {
    * can for instance be a feature such as speaker framing. Typically as a single
    * string of combined words without any spaces.
    */
-  option: typeof Option;
+  option: string;
   data: string;
 }
 
-export function isOptionCertificate(
+export function isValidOptionCertificate(
   optionCertificate: OptionCertificate
 ): optionCertificate is OptionCertificate {
   return (
