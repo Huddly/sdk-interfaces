@@ -1,3 +1,9 @@
+#### 0.2.6 (2023-03-13)
+
+##### New Features
+
+*  added smartbase pid ([98c7ce90](https://github.com/Huddly/sdk-interfaces/commit/98c7ce90a61b8151b7ea8880e28956615a1585c0))
+
 #### 0.2.5 (2023-03-07)
 
 ##### New Features
