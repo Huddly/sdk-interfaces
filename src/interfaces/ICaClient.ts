@@ -1,5 +1,5 @@
 /**
- *
+ * Available certificate options
  */
 export const Option = {
   speakerFraming: 'speakerframing',
@@ -20,7 +20,7 @@ export interface OptionCertificate {
    * can for instance be a feature such as speaker framing. Typically as a single
    * string of combined words without any spaces.
    */
-  option: typeof Option;
+  option: typeof Option[keyof typeof Option];
   data: string;
 }
 
@@ -28,7 +28,10 @@ export function isOptionCertificate(
   optionCertificate: OptionCertificate
 ): optionCertificate is OptionCertificate {
   return (
-    'format' in optionCertificate && 'option' in optionCertificate && 'data' in optionCertificate
+    'format' in optionCertificate &&
+    'option' in optionCertificate &&
+    'data' in optionCertificate &&
+    Object.keys(Option).includes(optionCertificate.option)
   );
 }
 
