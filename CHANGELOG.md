@@ -1,3 +1,9 @@
+#### 0.2.7 (2023-05-08)
+
+##### New Features
+
+*  added l1 and s1 with smartbase pids ([#17](https://github.com/Huddly/sdk-interfaces/pull/17)) ([7bd0bc47](https://github.com/Huddly/sdk-interfaces/commit/7bd0bc47570f33452311cceb481042cbc4e53a95))
+
 #### 0.2.6 (2023-03-13)
 
 ##### New Features
