@@ -1,3 +1,9 @@
+#### 0.2.8 (2023-06-05)
+
+##### New Features
+
+* **HuddlyHex:**  Added pid for crew over smartbase ([3a8449a8](https://github.com/Huddly/sdk-interfaces/commit/3a8449a85a14081bd6201f6147a25aed48e4cd57))
+
 #### 0.2.7 (2023-05-08)
 
 ##### New Features
