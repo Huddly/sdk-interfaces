@@ -1,6 +1,6 @@
 {
   "name": "@huddly/sdk-interfaces",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Module for describing the Huddly SDK using interfaces",
   "scripts": {
     "clean": "node rmLibDir.js",
