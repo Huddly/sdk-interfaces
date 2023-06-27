@@ -26,6 +26,11 @@ export default interface UpgradeOpts {
   bootTimeout?: number;
 
   /**
+   * A timeout for how long it should take to send upgrade buffer to the camera
+   */
+  bufferWriteTimeout?: number;
+
+  /**
    * @ignore
    *
    * @type {Buffer}
