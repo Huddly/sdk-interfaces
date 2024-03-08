@@ -2,8 +2,8 @@
  * Naming scheme to match strings used on target
  */
 enum DirectorModes {
-  Speaker = 'speaker-centric' as any,
-  Collaboration = 'default' as any,
+  Speaker = 'speaker-centric',
+  Collaboration = 'default',
 }
 
 export default DirectorModes;
