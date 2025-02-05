@@ -6,6 +6,7 @@ enum AutozoomModes {
   PLAZA = 'plaza',
   PLAZA_DUPLICATE = 'plaza_duplicate',
   SPEAKER_FRAMING = 'speaker_framing',
+  SPEAKER_CENTRIC_FRAMING = 'speaker_centric_framing',
   FOCUS = 'focus',
 }
 
